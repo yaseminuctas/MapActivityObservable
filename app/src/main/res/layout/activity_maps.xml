@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    tools:context=".MapsActivity"
+    android:background="@color/colorBack">
+
+<LinearLayout
+
+
+    android:id="@+id/layout_top"
+    android:orientation="vertical"
+    android:layout_width="438dp"
+    android:layout_height="450dp">
+
+
+    <fragment
+
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="438dp"
+        android:layout_height="450dp" />
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_top"
+        android:layout_marginTop="9dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_lat"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="Lat" />
+
+        <EditText
+            android:id="@+id/edt_lat"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            android:hint="41.025629"
+            />
+
+        <TextView
+            android:id="@+id/tv_lng"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="Lng" />
+
+
+        <EditText
+            android:id="@+id/edt_lng"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+
+            android:hint="28.974138"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout"
+        android:padding="8dp"
+       >
+
+        <Button
+            android:id="@+id/btn_ekle"
+            android:layout_width="410dp"
+            android:layout_height="70dp"
+            android:text="Ekle"
+            android:layout_gravity="center"
+            android:background="@color/colorEkle"/>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
